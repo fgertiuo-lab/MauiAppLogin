@@ -8,7 +8,9 @@ namespace MauiAppLogin
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Login();
+
+
         }
 
         protected override Window CreateWindow(IActivationState? activationState)

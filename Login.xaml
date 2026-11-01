@@ -3,10 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppLogin.Login"
              Title="Login">
-    <VerticalStackLayout>
+    <VerticalStackLayout 
+        VerticalOptions="Center"
+        Spacing ="10"
+        Padding="10">
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
+            Text="Sistema de Login"
+            
             HorizontalOptions="Center" />
+
+        <Label Text="Usuário: " />
+        <Entry x:Name="txt_usuario"/>
+        <Label Text="Senha" />
+        <Entry x:Name="txt_senha"  IsPassword="True"/>
+
+        <Button Text="Entrar"
+                Clicked="Button_Clicked"
+         HorizontalOptions="Center" />
+
+
     </VerticalStackLayout>
 </ContentPage>
